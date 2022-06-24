@@ -1,6 +1,6 @@
 ### LOCATIONS ###
-BOOKS_FILE     = '/mnt/e/Programming/BOOKMARK-CLI/Scripts/books.bm'
-BOOKMARKS_FILE = 'bookmarks.bm'
+BOOKS_FILE     = ''
+BOOKMARKS_FILE = ''
 
 
 ### ERRORS ###

@@ -12,6 +12,7 @@ This is an app that lets you keep bookmarks of your books located in different f
     - [initbm](#bm)
     - [delbm](#delbm)
     - [addbm](#addbm)
+    - [gotobm](#gotobm)
 
 ## Prerequisites
 
@@ -30,7 +31,8 @@ Only works on **Linux** or by using **WSL 2**.
 `alias bm="$PATH_SCRIPTS_BM/print_bookmarks.py"`\
 `alias initbm="$PATH_SCRIPTS_BM/init_bookmarks.py"`\
 `alias delbm="$PATH_SCRIPTS_BM/remove_bookmark.py"`\
-`alias addbm="$PATH_SCRIPTS_BM/add_bookmark.py"`
+`alias addbm="$PATH_SCRIPTS_BM/add_bookmark.py"`\
+`alias gotobm="$PATH_SCRIPTS_BM/goto_bookmark.sh"`
 
 *Finally:*
 `source ~/.bashrc`
@@ -73,3 +75,7 @@ Deletes the bookmarks file from the current directory.
 
 | Example: `delbm` |
 |---|
+
+### gotobm
+
+Changes directory to the one containing the title given as argument.

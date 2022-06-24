@@ -79,3 +79,6 @@ Deletes the bookmarks file from the current directory.
 ### gotobm
 
 Changes directory to the one containing the title given as argument.
+
+| Example: `gotobm "Great Book For Monads"` |
+|---|

@@ -17,7 +17,7 @@ def delete_from_directory():
 # search for path in BOOKS_FILE and delete it
 def delete_from_books():
     with open(BOOKS_FILE, 'r+') as f:
-        file_path = getcwd() + '/' + BOOKMARKS_FILE
+        file_path = getcwd() + '/'
         
         lines = f.readlines()
         

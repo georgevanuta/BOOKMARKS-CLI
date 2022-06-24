@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from misc import BOOKS_FILE, FLAGS_PRINT, BOOKMARKS_FILE, BOOKMARKS_NOT_FOUND,\
+                 HEADER_ALL_BOOKS, HEADER_LEN_SPACES, LINE_TABLE,\
                  exit_if, flag_message
 
 from sys import argv
@@ -10,8 +11,23 @@ from os import path
 
 # lists all directories with a bookmarks.bm file
 def all_bookmarks():
+    print(LINE_TABLE)
+    print(HEADER_ALL_BOOKS)
+    print(LINE_TABLE)
+
     with open(BOOKS_FILE, 'r') as f:
-        print(f.read())
+        lines = f.readlines()
+        
+        for line in lines:
+            path = line.split(':')[0]
+            book = line.split(':')[1].rstrip()
+            path_spaces_len = HEADER_LEN_SPACES - len(path)
+            book_spaces_len = HEADER_LEN_SPACES - len(book)
+            
+            print('|' + path + path_spaces_len * ' ' + '|' + book + book_spaces_len * ' ' + '|')
+            print(LINE_TABLE)
+            
+            
 
 
 # lists all bookmarks from current directory

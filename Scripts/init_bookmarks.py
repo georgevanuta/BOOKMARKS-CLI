@@ -13,7 +13,7 @@ def init_bookmarks(title):
     exit_if(path.exists(BOOKMARKS_FILE), BOOKMARKS_FOUND)
     
     with open(BOOKS_FILE, 'a') as f:
-        f.write(getcwd() + '/' + BOOKMARKS_FILE + ':' + title + '\n')
+        f.write(getcwd() + '/' + ':' + title + '\n')
 
     with open(BOOKMARKS_FILE, 'x') as f:
         f.write('---------- ' + title + ' ----------\n')

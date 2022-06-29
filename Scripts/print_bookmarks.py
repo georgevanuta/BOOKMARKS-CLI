@@ -57,6 +57,7 @@ def current_bookmarks():
             print('|' + page + page_spaces_len * ' ' + '|' + description + description_spaces_len * ' ' + '|' + date + date_spaces_len * ' ' + '|')
             print(LINE_CURRENT_TABLE)
             
+            
 def main():
     flags = argv[1:]
 

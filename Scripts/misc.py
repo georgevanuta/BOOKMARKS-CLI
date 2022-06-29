@@ -17,6 +17,7 @@ TITLE_USAGE         = '[USAGE]: initbm <TITILE>.'
 DESCRIPTION_USAGE   = '[USAGE]: addbm <PAGE> <DESCRIPTION>.'
 GOTO_USAGE          = '[USAGE]: gotobm <TITLE>.'
 
+
 ### HELPERS ###
 def exit_if(condition, message):
     if condition:
@@ -32,11 +33,16 @@ def flag_message(flag):
 ### FLAGS ###
 FLAGS_PRINT = ['-a', '--all']
 
+
 ### CHECK IF COMPLETED PATH ###
 exit_if(BOOKS_FILE == '' or BOOKMARKS_FILE == '', NO_FILES)
 
 
 ### FORMATING TABLE ###
-HEADER_ALL_BOOKS  = '|PATH' + '\t' * 7 + '|BOOK' + '\t' * 7 + '|'
-HEADER_LEN_SPACES = 55
-LINE_TABLE        = '+' + '-' * HEADER_LEN_SPACES + '+' + '-' * HEADER_LEN_SPACES + '+'
+HEADER_ALL_BOOKS        = '|PATH' + '\t' * 7 + '|BOOK' + '\t' * 7 + '|'
+HEADER_LEN_SPACES       = 55
+LINE_TABLE              = '+' + '-' * HEADER_LEN_SPACES + '+' + '-' * HEADER_LEN_SPACES + '+'
+
+HEADER_CURRENT_SPACES   = 31
+HEADER_CURRENT_BOOKS    = '|PAGE' + '\t' * 4 + '|DESCRIPTION' + 3 * '\t' + '|DATE' + '\t' * 4 + '|'
+LINE_CURRENT_TABLE      = '+' + HEADER_CURRENT_SPACES * '-' + '+' + HEADER_CURRENT_SPACES * '-' + '+' + HEADER_CURRENT_SPACES * '-' + '+'

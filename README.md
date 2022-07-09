@@ -33,7 +33,8 @@ Only works on **Linux** or by using **WSL 2**.
 `alias initbm="$PATH_SCRIPTS_BM/init_bookmarks.py"`\
 `alias delbm="$PATH_SCRIPTS_BM/remove_bookmark.py"`\
 `alias addbm="$PATH_SCRIPTS_BM/add_bookmark.py"`\
-`alias gotobm="$PATH_SCRIPTS_BM/goto_bookmark.sh"`
+`alias gotobm="$PATH_SCRIPTS_BM/goto_bookmark.sh"`\
+`alias helpbm="$PATH_SCRIPTS_BM/help_bookmark.py"`
 
 *Finally:*
 `source ~/.bashrc`

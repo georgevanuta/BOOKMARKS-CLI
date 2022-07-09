@@ -13,6 +13,7 @@ This is an app that lets you keep bookmarks of your books located in different f
     - [delbm](#delbm)
     - [addbm](#addbm)
     - [gotobm](#gotobm)
+    - [helpbm](#helpbm)
 
 ## Prerequisites
 
@@ -39,11 +40,11 @@ Only works on **Linux** or by using **WSL 2**.
 
 ## Demo
 
--Move to a directory where you have a book.\
--`initbm "some great book by some great author"` *starts a bookmarks file in the current directory*\
--`bm --all` *to see that it was added corectly*\
--`addbm 13 "cool part"` *adds a bookmark to page 13 with description "cool part" at the current date*\
--`bm` *shows all bookmarks from the current directory*\
+-Move to a directory where you have a book.
+-`initbm "some great book by some great author"` *starts a bookmarks file in the current directory*
+-`bm --all` *to see that it was added corectly*
+-`addbm 13 "cool part"` *adds a bookmark to page 13 with description "cool part" at the current date*
+-`bm` *shows all bookmarks from the current directory*
 -`delbm` *deletes the bookmark file*
 
 ## Commands
@@ -80,5 +81,12 @@ Deletes the bookmarks file from the current directory.
 
 Changes directory to the one containing the title given as argument.
 
-| Example: `gotobm "Great Book For Monads"` |
+| Example: `gotobm "ITTTOF by Sipser"` |
+|---|
+
+### helpbm
+
+Shows all possible bm commands, or, given an argument, describes the command.
+
+| Example: `helpbm` |
 |---|

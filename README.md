@@ -3,6 +3,7 @@
 This is an app that lets you keep bookmarks of your books located in different files from the CLI.
 
 [BOOKMARK's Management in CLI](#bookmarks-management-in-cli)
+  - [Examples](#examples)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Setup](#setup)
@@ -14,6 +15,14 @@ This is an app that lets you keep bookmarks of your books located in different f
     - [addbm](#addbm)
     - [gotobm](#gotobm)
     - [helpbm](#helpbm)
+
+## Examples
+
+- Example of all bookmarked books and their respective directories:
+<img src="https://user-images.githubusercontent.com/74255152/178733309-f26b9125-ebf1-40a8-b7c0-fc277a63e97a.PNG">
+
+- Example of current bookmarks of the current directory:
+<img src="https://user-images.githubusercontent.com/74255152/178731718-e469bd06-fc41-4f63-916a-25583f1d5bca.PNG">
 
 ## Prerequisites
 
